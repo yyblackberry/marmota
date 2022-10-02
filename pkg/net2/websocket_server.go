@@ -49,7 +49,7 @@ type WebsocketServer struct {
 	running  bool
 }
 
-func NewWebsocketServer(c *WebsocketConfig, accepts int, cb TcpConnectionCallback) (s *WebsocketServer, err error) {
+func NewWebsocketServer(c *WebsocketConfig, accepts int, cb TcpConnectionCallback, connMgr *ConnectionManager) (s *WebsocketServer, err error) {
 	var (
 		bind    string
 		lsnList []*net.TCPListener
@@ -72,7 +72,7 @@ func NewWebsocketServer(c *WebsocketConfig, accepts int, cb TcpConnectionCallbac
 	s = &WebsocketServer{
 		c:        c,
 		accepts:  accepts,
-		connMgr:  NewConnectionManager(),
+		connMgr:  connMgr, //NewConnectionManager(),
 		lsnList:  lsnList,
 		callback: cb,
 	}

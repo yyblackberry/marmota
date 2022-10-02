@@ -48,7 +48,7 @@ type TcpServer2 struct {
 	running  bool
 }
 
-func NewTcpServer2(c *TcpServerConfig, accepts int, cb TcpConnectionCallback) (s *TcpServer2, err error) {
+func NewTcpServer2(c *TcpServerConfig, accepts int, cb TcpConnectionCallback, connMgr *ConnectionManager) (s *TcpServer2, err error) {
 	var (
 		bind    string
 		lsnList []*net.TCPListener
@@ -71,7 +71,7 @@ func NewTcpServer2(c *TcpServerConfig, accepts int, cb TcpConnectionCallback) (s
 	s = &TcpServer2{
 		c:        c,
 		accepts:  accepts,
-		connMgr:  NewConnectionManager(),
+		connMgr:  connMgr, //NewConnectionManager(),
 		lsnList:  lsnList,
 		callback: cb,
 	}
