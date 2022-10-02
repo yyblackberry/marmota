@@ -62,7 +62,7 @@ import (
 	"strconv"
 	"unicode"
 
-	"github.com/teamgram/marmota/pkg/stores/sqlx/reflectx"
+	"github.com/yyblackberry/marmota/pkg/stores/sqlx/reflectx"
 )
 
 func bindAnyArgs(names []string, arg interface{}, m *reflectx.Mapper) ([]interface{}, error) {

@@ -24,7 +24,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/teamgram/marmota/pkg/net/http/binding"
+	"github.com/yyblackberry/marmota/pkg/net/http/binding"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

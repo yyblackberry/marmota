@@ -22,7 +22,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/teamgram/marmota/pkg/stores/sqlx"
+	"github.com/yyblackberry/marmota/pkg/stores/sqlx"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

@@ -22,7 +22,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"github.com/teamgram/marmota/pkg/version"
+	"github.com/yyblackberry/marmota/pkg/version"
 	"math/rand"
 	"os"
 	"os/signal"

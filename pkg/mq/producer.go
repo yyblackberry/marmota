@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/teamgram/marmota/pkg/error2"
+	"github.com/yyblackberry/marmota/pkg/error2"
 
 	"github.com/Shopify/sarama"
 )

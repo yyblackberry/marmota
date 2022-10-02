@@ -21,7 +21,7 @@ package utils
 import (
 	"encoding/hex"
 
-	"github.com/teamgram/marmota/pkg/hack"
+	"github.com/yyblackberry/marmota/pkg/hack"
 )
 
 func WriteString(x *BufferOutput, s string) {
